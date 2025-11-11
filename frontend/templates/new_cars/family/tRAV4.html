@@ -6,22 +6,67 @@
         <title>Product</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="../../../static/css/ci.css">
+        <link rel="stylesheet" href="../../../static/css/product.css">
     </head>
     <body>
-        <button><a href="../../index.html">Go Home</a></button>
-        <h1>Toyota RAV4 Hybrid</h1>
-        <div>
-            <h3>Images</h3>
-            <button><</button>
+        <header id="header">
             <div>
-                <img src="../../../static/rav4/exterior.avif" alt="Toyota RAV4 Hybrid" height="250px">
+            <a href="#"><img id="logo" src="../../../static/icon/logo-without-bg.png" alt="logo"></a>
             </div>
-            <button>></button>
+            <ul id="navbar">
+            <li><a class="active" href="#">Home</a></li>
+            <li class="dropdown">
+                <a href="sportsCars.html">Sport</a>
+                <div class="dropdown-content">
+                <a href="./newSportsCars.html">New Sport Cars</a>
+                <a href="./usedSportsCars.html">Used Sport Cars</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="./luxuryCars.html">Luxury</a>
+                <div class="dropdown-content">
+                <a href="./newLuxuryCars.html">New Luxury Cars</a>
+                <a href="./usedLuxuryCars.html">Used Luxury Cars</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="./familiyCars.html">Family</a>
+                <div class="dropdown-content">
+                <a href="./newFamiliyCars.html">New Family Cars</a>
+                <a href="./usedFamiliyCars.html">Used Family Cars</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="./customer.html">Customer Area</a>
+                <div class="dropdown-content">
+                <a href="./customer.html">Profile</a>
+                <a href="./shoppingCart.html">Shopping Cart</a>
+                <a href="logout.html">Logout</a>
+                </div>
+            </li>
+            <li>
+                <a href="./login.html">Login</a>
+            </li>
+            <li>
+                <a href="./about.html">About</a>
+            </li>
+            </ul>
+        </header>
+        <h1>Toyota RAV4 Hybrid</h1>
+        <div id="images">
+            <h3>Images</h3>
+            <div>
+                <button><i class="bi bi-arrow-left-circle-fill"></i></button>
+                <div>
+                    <img src="../../../static/rav4/interior.avif" alt="Toyota RAV4 Hybrid" height="400px">
+                </div>
+                <button><i class="bi bi-arrow-right-circle-fill"></i></button>
+            </div>
         </div>
-
-        <button><a href="../../shoppingCart.html">Add to Cart</a></button>
-
+        <div id="btn">
+            <button id="shop-top" class="shop"><a href="../../shoppingCart.html">Add to Cart</a></button>
+        </div>
         <div>
             <h3>Description</h3>
             <p>
@@ -29,17 +74,18 @@
             </p>
             <h3>Key features</h3>
             <ul>
-                <li>Hybrid powertrain combining petrol engine and electric motor for high efficiency and smooth driving.</li>
-                <li>Available all-wheel drive (AWD) for improved traction and stability on various road conditions.</li>
-                <li>Spacious and comfortable interior with modern infotainment and driver-assistance systems.</li>
-                <li>Strong reliability, low fuel consumption (~5.6 L/100 km), and reduced emissions compared to petrol-only SUVs.</li>
+                <li><p>Hybrid powertrain combining petrol engine and electric motor for high efficiency and smooth driving.</p></li>
+                <li><p>Available all-wheel drive (AWD) for improved traction and stability on various road conditions.</p></li>
+                <li><p>Spacious and comfortable interior with modern infotainment and driver-assistance systems.</p></li>
+                <li><p>Strong reliability, low fuel consumption (~5.6 L/100 km), and reduced emissions compared to petrol-only SUVs.</p></li>
             </ul>
         </div>
-        <div>
+        <div id="price">
             <h3>Price</h3>
             <p>€ 45.000</p>
         </div>
         <Details>
+            <summary>Details about The Car</summary>
             <ul>
                 <li>
                     <H3>Engine</H3>
@@ -82,6 +128,26 @@
                 </li>
             </ul>
         </Details>
-        <button><a href="../../shoppingCart.html">Add to Cart</a></button>
+        
+        <button id="shop-bottom" class="shop"><a href="../../shoppingCart.html">Add to Cart</a></button>
+          <footer>
+        <div class="col">
+            
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> 562 Wellington Road, Street 32, San Francisco</p>
+            <p><strong>Phone:</strong> +01 2222 365 /(+91) 01 2345 6789</p>
+            <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+            </div>
+            <div class="col">
+            <div>
+                <h4>Follow Us</h4>
+                <div class="icon">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+            </div>
+        </footer>
     </body>
 </html>
