@@ -1,50 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <title>Your Cars Webshop – Home</title>
+  <link rel="stylesheet" href="../static/css/ci.css">
+  <link rel="stylesheet" href="../static/css/home.css">
 </head>
 
 <body>
+  <header id="header">
+    <div>
+      <a href="#"><img id="logo" src="../static/icon/logo-without-bg.png" alt="logo"></a>
+    </div>
+    <ul id="navbar">
+      <li><a class="active" href="#">Home</a></li>
+      <li class="dropdown">
+        <a href="sportsCars.html">Sport</a>
+        <div class="dropdown-content">
+          <a href="./newSportsCars.html">New Sport Cars</a>
+          <a href="./usedSportsCars.html">Used Sport Cars</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="./luxuryCars.html">Luxury</a>
+        <div class="dropdown-content">
+          <a href="./newLuxuryCars.html">New Luxury Cars</a>
+          <a href="./usedLuxuryCars.html">Used Luxury Cars</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="./familiyCars.html">Family</a>
+        <div class="dropdown-content">
+          <a href="./newFamiliyCars.html">New Family Cars</a>
+          <a href="./usedFamiliyCars.html">Used Family Cars</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="./customer.html">Customer Area</a>
+        <div class="dropdown-content">
+          <a href="./customer.html">Profile</a>
+          <a href="./shoppingCart.html">Shopping Cart</a>
+          <a href="logout.html">Logout</a>
+        </div>
+      </li>
+      <li>
+        <a href="./login.html">Login</a>
+      </li>
+      <li>
+        <a href="./about.html">About</a>
+      </li>
+    </ul>
+  </header>
 
-  <h1>Your Cars Webshop</h1>
-  <p>Welcome! Start by choosing a car category or accessing customer options.</p>
+  <section id="view">
+    <div id="overlay-band">
+      <h2>Drive Your Dream</h2>
+      <h4>Quality Cars, Trusted Service</h4>
+      <br><br>
+      <p>Discover your perfect ride with our wide selection of reliable new 
+        and pre-owned vehicles. At [Your Shop Name], 
+        we combine unbeatable prices with expert support 
+        to make your car buying experience fast, 
+        transparent, and enjoyable. From browsing to 
+        keys-in-hand, we’re here to help you drive with 
+        confidence.
+      </p>
+    </div>
+  </section>
 
-  <h2>Product Categories</h2>
-  <ul>
-    <li>
-      <a href="./sportsCars.html">Sport Cars</a>
-      <ul>
-        <li><a href="./newSportsCars.html">New Sport Cars</a></li>
-        <li><a href="./usedSportsCars.html">Used Sport Cars</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="./luxuryCars.html">Luxury Cars</a>
-      <ul>
-        <li><a href="./newLuxuryCars.html">New Luxury Cars</a></li>
-        <li><a href="./usedLuxuryCars.html">Used Luxury Cars</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="./familiyCars.html">Family Cars</a>
-      <ul>
-        <li><a href="./newFamiliyCars.html">New Family Cars</a></li>
-        <li><a href="./usedFamiliyCars.html">Used Family Cars</a></li>
-      </ul>
-    </li>
-  </ul>
+  <section id="features">
+    <div class="fe-box">
+      <img class="img" src="../static/icon/f1.png" alt="oline order">
+      <h6>Search for your dream car</h6>
+    </div>
+    <div class="fe-box">
+      <img class="img" src="../static/icon/f2.png" alt="free shipment">
+      <h6>Free Delivery</h6>
+    </div>
+    <div class="fe-box">
+      <img class="img" src="../static/icon/f3.png" alt="Payment">
+      <h6>Payment on Delivery</h6>
+    </div>
+    <div class="fe-box">
+      <img class="img" src="../static/icon/f4.png" alt="promotion">
+      <h6>Promotions</h6>
+    </div>
+    <div class="fe-box">
+      <img class="img" src="../static/icon/f5.png" alt="Happy Customer">
+      <h6>Happy Customer</h6>
+    </div>
+  </section>
 
-  <h2>General Information</h2>
-  <ul>
-    <li><a href="./about.html">Information about the Seller</a></li>
-  </ul>
-
-  <h2>Customer Area</h2>
-  <ul>
-    <li><a href="./login.html">Login to Customer Area</a></li>
-  </ul>
+  <footer>
+    <div class="col">
+      
+      <h4>Contact</h4>
+      <p><strong>Address:</strong> 562 Wellington Road, Street 32, San Francisco</p>
+      <p><strong>Phone:</strong> +01 2222 365 /(+91) 01 2345 6789</p>
+      <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+    </div>
+    <div class="col">
+      <div>
+        <h4>Follow Us</h4>
+        <div class="icon">
+          <a href="#"><img src="../static/icon/facebook-7-24.png" alt="Facebook" width="20"></a>
+          <a href="#"><img src="../static/icon/instagram-24.png" alt="Instagram"></a>
+          <a href="#"><img src="../static/icon/youtube-4-24.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 </body>
 
