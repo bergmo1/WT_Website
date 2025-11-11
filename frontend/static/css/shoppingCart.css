@@ -74,19 +74,22 @@
 }
 
 #overlay-band th,
-tr,
 td {
     color: #ffffff;
     opacity: 1;
     width: 50%;
     font-size: 1.4rem;
-    background-color: #3f3f4285;
+    background-color: #3f3f42c5;
     padding: 10px;
     border-radius: 10px;
 }
 
-#overlay-band tfoot, thead {
-    background-color: #ffffff85;
+#overlay-band tfoot tr td {
+    background-color: #727278c5;
+}
+
+#overlay-band thead tr th {
+    background-color: #727278c5;
 }
 
 #summary {
