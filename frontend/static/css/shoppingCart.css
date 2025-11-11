@@ -84,14 +84,10 @@ td {
     border-radius: 10px;
 }
 
-#overlay-band tfoot tr td {
+#overlay-band tfoot td {
     background-color: #727278c5;
 }
 
-#overlay-band thead tr th {
+#overlay-band thead th {
     background-color: #727278c5;
-}
-
-#summary {
-    text-align: left;
 }
