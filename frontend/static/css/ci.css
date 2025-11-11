@@ -69,6 +69,7 @@ header {
     font-weight: 600; /* thickness of the text */
     color: #fdfcfc;
     transition: 0.3s ease; /* smooth transition and small animation*/
+    padding-bottom: 10px;
 }
 
 #navbar li a:hover, 
@@ -109,12 +110,14 @@ header {
     border-radius: 4px;
     top: 100%; /* Align below the button */
     left: 0;
-    transform: translateY(10px); /* Move the dropdown below the button by 10px*/
+    transform: translateY(8px); /* Move the dropdown below the button by 10px*/
+
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
 .dropdown-content a {
     text-decoration: none;
     color: #1a1a1a;
