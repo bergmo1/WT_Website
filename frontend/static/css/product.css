@@ -1,0 +1,171 @@
+:root{
+    --color: black;
+    --bg: rgb(224, 222, 222);
+    --title-color: cadetblue;
+    --contrast-color: white;
+    --details-bg: #4b5560
+}
+
+
+body{
+    background-color: var(--bg);
+    display: flex;
+    flex-direction: column;
+}
+
+p, .shop > a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--color);
+    font-weight: 500;
+    margin: 15px 15px 20px 15px;  
+}
+
+h1 {
+    font-weight: 800;
+    margin: 15px 15px 20px 15px;
+    text-align: center;
+}
+
+div > h3 {
+    margin-top: 15px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: var(--title-color);
+    font-weight: 500;
+    margin-left: 25px;
+    position: relative;
+    display: inline-block;
+}
+
+h3::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top:100%;
+    width: 60%;
+    height: 3px;
+    border: 0px solid var(--title-color);
+    border-radius: 1.5px;
+    background: var(--title-color);
+    margin: 5px 0 20px 0;
+}
+
+ul {
+    margin-left: 25px;
+}
+
+li {
+    list-style-type: disc;
+}
+
+li > p {
+    margin-left: 0px;
+}
+
+details > ul > li {
+    list-style-type: none;
+}
+
+details:open {
+    background-color: var(--details-bg);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 1.3rem;
+    color: var(--contrast-color);
+}
+
+summary {
+    font-size: 1.3rem;
+    color: var(--contrast-color);
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-top: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: var(--details-bg);
+}
+
+summary::marker {
+    color: var(--contrast-color);
+}
+
+#btn {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0 15px 0
+}
+.shop {
+    height: 80px;
+    background-color: var(--title-color);
+    color: white;
+    font: 1.5rem;
+}
+
+#shop-top {
+    width: 30%;
+    border: 1px solid var(--title-color);
+    border-radius: 40px;
+    justify-self: center;
+}
+
+#shop-bottom {
+    border: none
+}
+
+.shop:hover {
+    z-index: 5;
+    box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+#images div{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+#images img{
+    width: auto;
+}
+
+#images div button{
+    width: 100px;
+    height: 100%;
+    font-size: 50px;
+    background-color: transparent;
+    color: black;
+    border: none;
+}
+
+#images div button:hover, #images div button:active{
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.0);
+    border-radius: 10px;
+    z-index: 5;
+    transition: background-color 1s;    
+}
+
+@media screen and (max-width:910px) {
+    #images img{
+        width: 100%;
+        height: auto;   
+    }
+
+    #images div{
+        height: auto;
+    }
+
+    #shop-top a {
+        font-size: 15px;
+        height: 60px
+    }
+}
+
+
