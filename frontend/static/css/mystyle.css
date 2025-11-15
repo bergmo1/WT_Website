@@ -7,6 +7,10 @@
     font-family: "Spartan", sans-serif;
 }   
 
+#menu {
+    display: none;
+}
+
 h1 {
     font-size: 50px;
     line-height: 64px;
@@ -45,6 +49,7 @@ header {
     position: sticky; /* it sticks to the top of the page so that it doesn't move when scrolling */
     top: 0; /* position of the navbar */
     left: 0;
+    height: 15vh;
 }
 
 #logo {
@@ -193,3 +198,53 @@ footer .col > div > h4{
     transition: 0,3s ease;
 }
 
+
+@media screen and (max-width: 850px) and (min-width: 600px) {
+    #navbar {
+        flex-wrap: wrap;
+    }
+
+    #navbar li {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #navbar > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #menu {
+        background-color: transparent;
+        font-size: 25px;
+        border: none;
+        width: 100%;
+        color: white;
+    }
+    #navbar li {
+        margin-top: 10px;
+    }
+
+    #menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+}
