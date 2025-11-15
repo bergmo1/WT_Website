@@ -67,10 +67,10 @@
 }
 
 #overlay-band p,
-label,
-textarea,
-button,
-input {
+#overlay-band label,
+#overlay-band textarea,
+#overlay-band button,
+#overlay-band input {
     color: #fff;
     opacity: 1;
     width: 40%;
@@ -78,8 +78,8 @@ input {
 }
 
 #overlay-band button,
-textarea,
-input {
+#overlay-band textarea,
+#overlay-band input {
     background-color: #3f3f42c5;
     border-radius: 10px;
     padding: 10px;
@@ -103,7 +103,7 @@ input {
 }
 
 #overlay-band th,
-td {
+#overlay-band td {
     color: #ffffff;
     opacity: 1;
     width: 50%;

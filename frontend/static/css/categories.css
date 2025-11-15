@@ -65,7 +65,7 @@
     font-size: 2rem;
 }
 
-#overlay-band p, a {
+#overlay-band p, #overlay-band a {
     color: #fff;
     opacity: 1;
     width: 50%;
