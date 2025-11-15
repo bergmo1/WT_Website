@@ -1,0 +1,52 @@
+body {
+    font-family: Times New Roman, Times, serif;
+    font-size: 12px;
+    text-align: center; 
+}
+p {
+    text-align: right;
+}
+p.address {
+    text-align: center;     
+}
+table {
+      border-collapse: collapse;
+      margin: auto;
+    }
+    table, th, td {
+      border: 1px solid gray;
+    }
+    th, td {
+        width: 50px;
+        padding: 5px;
+    }
+    th {
+        background-color: lightgrey;}
+    a:link {
+    color: blue;           
+    text-decoration: none;    
+    font-weight: bold;        
+}
+
+a:visited {
+    color: purple;          
+}
+
+a:hover {
+    color: red;           
+    text-decoration: underline;
+}
+
+a:active {
+    color: orange; 
+}
+
+button {
+    font-family: Times New Roman, Times, serif;     
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 6px;
+    border: 1px solid grey;
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
